@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts"></script>
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <span contenteditable id="title" type="text" size="4" placeholder="Title">Title</span>
+
+        <!-- <input id="title" type="text" size="4" placeholder="Title"></input> -->
+      
+      <form> 
+        <script>
+          function auto_grow(element) {
+              element.style.height = 0 + "px"; 
+              element.style.height = (element.scrollHeight) + "px"; 
+          }
+        </script>
+        <textarea id="content" class="input" oninput="auto_grow(this)" name="" cols="70"></textarea>
+      </form>
+
+      <textarea placeholder="tags: " id="tags" class="input" name="" cols="30"></textarea>
+
+      <button id="submit">Submit</button>
+    </div>
+
+  </body>
+</html>
