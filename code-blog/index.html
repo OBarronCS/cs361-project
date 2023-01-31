@@ -11,10 +11,17 @@
   </head>
   <body>
     <div id="app">
-      <span contenteditable id="title" type="text" size="4" placeholder="Title">Title</span>
+      <span contenteditable id="title" type="text" size="4">Title</span>
 
-        <!-- <input id="title" type="text" size="4" placeholder="Title"></input> -->
-      
+      <div class="dropdown">
+        <button class="dropbtn">Settings</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+      </div>
+
       <form> 
         <script>
           function auto_grow(element) {

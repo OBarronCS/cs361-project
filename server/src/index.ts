@@ -14,10 +14,32 @@ app.get("/", (req, res, next) => {
     res.send("Ayo matey!")
 });
 
+
+// ID to post
+const posts = new Map<number,Post>();
+let id = 0;
+
 app.get("/post/:post_num", (req,res,next) => {
     const post_num = req.params["post_num"];
 
 
+
+});
+
+class Post {
+    constructor(public title: string, public contents: string, public tags: string){}
+}
+
+
+
+app.post("/create", (req,res,next) => {
+    const post: Post = new Post(
+        "Title",
+        "Contents",
+        "Tags"
+    );
+
+    posts.set(id++,post);
 });
 
 

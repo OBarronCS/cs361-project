@@ -1,8 +1,10 @@
 import './style.css'
 import placeholder from './placeholder.md?raw'
 
-const context_text_box = document.querySelector<HTMLTextAreaElement>('#content')!
+const title_span = document.getElementById("title") as HTMLSpanElement;
+const tag_text_box = document.getElementById("tags") as HTMLTextAreaElement;
 
+const context_text_box = document.getElementById("content") as HTMLTextAreaElement;
 context_text_box.placeholder = `${placeholder}`
 
 // Allow the use of the "Tab" key
@@ -24,3 +26,28 @@ const dummy_event = new Event('input', {
 });
   
 context_text_box.dispatchEvent(dummy_event);
+
+
+const submit_button = document.getElementById("submit") as HTMLButtonElement;
+submit_button.addEventListener("click", async () => {
+    const title = title_span.innerText;
+    const content = context_text_box.value;
+    const tags = tag_text_box.value;
+
+    console.log(title, content, tags);
+
+
+    const response = await fetch("./create", {
+        method: "POST",
+        body: JSON.stringify({
+            title,
+            content,
+            tags
+        })
+    }).catch((e) => {
+        console.error("Error");
+        console.error(e);
+    })
+
+
+});

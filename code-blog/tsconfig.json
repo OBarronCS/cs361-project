@@ -5,15 +5,20 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "skipLibCheck": true,
+
+    "strictFunctionTypes": true,
+    "alwaysStrict":true,
+    "noImplicitThis":true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictBindCallApply":true,
+    "forceConsistentCasingInFileNames": true,
   },
   "include": ["src"]
 }
