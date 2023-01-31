@@ -8,13 +8,24 @@
         "outDir": "dist",
         "baseUrl": ".",
         
+        "checkJs": true,
+
         "paths": {
             "*": [
                 "node_modules/*"
             ]
-        }
+        },
+        
+        "strictFunctionTypes": true,
+        "alwaysStrict":true,
+        "noImplicitThis":true,
+        "noImplicitReturns": true,
+        "noImplicitOverride": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictBindCallApply":true,
+        "forceConsistentCasingInFileNames": true,
     },
     "include": [
-        "src/**/*"
+        "index.ts"    
     ]
 }

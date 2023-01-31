@@ -1,0 +1,23 @@
+<!-- HTML for viewing a post -->
+<html>
+    <title>Test</title>
+    <link rel="stylesheet" href="/post_static/post.css">
+    <link rel="stylesheet" href="/post_static/prism.css">
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+<body>
+
+<div id="app">
+    <span id="title" type="text" size="4">{{title}}</span>
+
+    <div id="content">
+<md-block>
+{{content}}
+</md-block>
+    </div>
+
+    <div id="tags" class="input" name="" cols="30">{{ tags }}</div>
+
+</div>
+<script src="/post_static/prism.js"></script>
+</body>
+</html>
