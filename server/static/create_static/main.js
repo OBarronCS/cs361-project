@@ -40,6 +40,7 @@ context_text_box.dispatchEvent(dummy_event);
 
 const submit_button = document.getElementById("submit");
 submit_button.addEventListener("click", async () => {
+    prompt("Are you sure you wish to publish this post?")
     const title = title_span.innerText;
     const content = context_text_box.value;
     const tags = tag_text_box.value;
