@@ -26,4 +26,4 @@ The `wiki` key holds a string value that contains a description of the location 
 
 
 ## UML Sequence Diagram of Communication
-![](uml.png)
+![](uml.svg)
