@@ -96,13 +96,13 @@ app.listen(PORT, () => {
 // }
 
 
-const json = {
-    "wiki":"London is the capital and largest city of England and the United Ki.. (truncated for example)",
-    "images":["https://www.tipsfortravellers.com/wp-content/uploads/2016/10/IMG_3408.jpg",
-        "http://www.superiorwallpapers.com/download/sunset-over-the-beautiful-london-tower-bridge-2880x1800.jpg",
-        "https://cdn1.matadornetwork.com/blogs/1/2016/11/London_2-1200x900.jpg",
-        "https://www.triptolondon.net/wp-content/uploads/2013/06/london_bridge.jpg",
-        "https://chasingthetravelbug.com/wp-content/uploads/2018/08/IMG_3290.jpg",
-        "http://scenictravel.com.sg/wp-content/uploads/2018/09/4D-London.jpg",
-    ]
-}
+// const json = {
+//     "wiki":"London is the capital and largest city of England and the United Ki.. (truncated for example)",
+//     "images":["https://www.tipsfortravellers.com/wp-content/uploads/2016/10/IMG_3408.jpg",
+//         "http://www.superiorwallpapers.com/download/sunset-over-the-beautiful-london-tower-bridge-2880x1800.jpg",
+//         "https://cdn1.matadornetwork.com/blogs/1/2016/11/London_2-1200x900.jpg",
+//         "https://www.triptolondon.net/wp-content/uploads/2013/06/london_bridge.jpg",
+//         "https://chasingthetravelbug.com/wp-content/uploads/2018/08/IMG_3290.jpg",
+//         "http://scenictravel.com.sg/wp-content/uploads/2018/09/4D-London.jpg",
+//     ]
+// }

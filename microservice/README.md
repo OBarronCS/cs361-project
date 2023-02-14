@@ -23,3 +23,7 @@ The service responds to each HTTP request with a response containing a string re
 The `wiki` key holds a string value that contains a description of the location queried. The `image` key contains a list of arbitrary length of links to images of the location.
 
 ![](response.png)
+
+
+## UML Sequence Diagram of Communication
+![](uml.png)
